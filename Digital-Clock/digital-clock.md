@@ -4,7 +4,7 @@ Notes about CSS and Js codes
 
 ### Css
 
-
+* the body needs to have 100vh to centralize the elements vertically
 * the body background is a url from the site unsplash
 * background-size cover - to cover the viewport
 * overflow: hidden - to hide the scroll
