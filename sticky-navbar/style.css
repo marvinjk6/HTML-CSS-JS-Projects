@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    font-family: cursive;
+    font-size: 1.4em;
+    width: 100%;
+    background-color: #ffffff;
+    
+    box-shadow: 0px 4px 6px #0000003d;
+    transition: background-color .4s;
+}
+
+/**=======  class to be added  =========**/
+.navbar.active {
+    background-color: #1a1a1a;
+}
+
+
+.navbar.active  ul a {
+    color: white;
+}
+
+/*=====================================*/
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar ul a  {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.navbar ul a:hover {
+    color: #32ffff;
+    text-decoration: underline;
+}
+
+
+
+.top-container {
+    background: url("https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.top-container h1 {
+    color: #ffffff;
+    font-size: 2.5em;
+    letter-spacing: 4px;
+    text-shadow: 1px 3px 3px black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.text {
+    font-family: sans-serif;
+    margin: 50px 5%;
+}
