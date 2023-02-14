@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    font-family: cursive;
+}
+
+h1 {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+}
+
+.color-container {
+    width: 350px;
+    height: 150px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    border-radius: 10px;
+    text-shadow: 2px 4px 4px #00000052;
+    border: 2px solid #000000;
+    background-color: #ff4500;
+    color: #ffffff;
+}
