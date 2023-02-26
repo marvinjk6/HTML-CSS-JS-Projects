@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: .4s;
+}
+
+.input {
+    visibility: hidden;
+}
+
+/*====== if input is checked we change the background of the label to white  =======*/
+.input:checked + .label {
+    background-color: #ffffff;
+}
+
+/*==== if input is checked the animation happens, here we put the animation created with Keyframes  ====*/
+.input:checked + .label .circle {
+    animation: toggleOn .4s linear forwards;
+    background-color: #000000;
+}
+
+.label {
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    background-color: #d3d3d3;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.circle {
+    width: 30px;
+    background-color: #ffffff;
+    height: 30px;
+    border-radius: 50%;
+    top: 5px;
+    left: 3px;
+    position: absolute;
+
+    animation: toggleOff .4s linear forwards;
+}
+
+/*===== animations that will be put in the circle ======*/
+@keyframes toggleOn {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(44px);
+    }
+}
+
+@keyframes toggleOff {
+    0% {
+        transform: translateX(44px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
